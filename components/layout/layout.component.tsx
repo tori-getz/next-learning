@@ -13,11 +13,11 @@ export const Layout: React.FC<ILayout> = ({
     children
 }) => {
     return (
-        <>
+        <div className={styles.wrapper}>
             <Navbar />
             <div className={styles.content}>
                 {children}
             </div>
-        </>
+        </div>
     )
 }

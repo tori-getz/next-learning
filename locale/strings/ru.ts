@@ -9,4 +9,7 @@ export const ru: ITranslation = {
     'enter your username': 'введите ваш юзернейм',
     'username': 'юзернейм',
     'connect': 'подключиться',
+    'chat': 'чат',
+    'message': 'сообщение',
+    'send': 'отправить'
 };

@@ -1,0 +1,11 @@
+.wrapper {
+    display: flex;
+    gap: 1em;
+    margin: 0.5em;
+}
+
+@media (max-width: 599px) {
+    .send {
+        display: none;
+    }
+}

@@ -9,3 +9,22 @@
 .appName {
     flex: 1;
 }
+
+.buttons {
+    display: flex;
+    gap: 1em
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 599px) {
+    .buttons {
+        display: none;
+    }
+
+    .burger {
+        display: block
+    }
+}

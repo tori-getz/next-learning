@@ -42,8 +42,9 @@ export const LoginForm: React.FC = () => {
     return (
         <Container
             sm
-            css={{ mt: 15 }}
+            css={{ mt: '5em' }}
             responsive
+            fluid
         >
             <Card>
                 <div className={styles.wrapper}>
@@ -57,17 +58,10 @@ export const LoginForm: React.FC = () => {
                     <Button
                         bordered={isDark}
                         color='gradient'
-                        onClick={onSubmit}
+                        onPress={onSubmit}
                     >
                         {t('connect')}
                     </Button>
-                    <h1>{JSON.stringify(user)}</h1>
-                    <User
-                        name={user.name}
-                        text={user.name}
-                        color={user.color}
-                        bordered
-                    />
                 </div>
             </Card>
         </Container>

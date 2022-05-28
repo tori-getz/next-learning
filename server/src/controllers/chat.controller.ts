@@ -6,12 +6,12 @@ import {
 
 import { LoggerService } from '../services/logger.service';
 
+const logger: LoggerService = new LoggerService('ChatController');
+
 @Controller('chat')
 export class ChatController {
-    private logger: LoggerService = new LoggerService(ChatController.name);
-
     @OnConnection()
-    public async onConnection () {
-        this.logger.info('new connection');
+    public onConnection () {
+        logger.info('new connection');
     }
 }

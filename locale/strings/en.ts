@@ -10,4 +10,7 @@ export const en: ITranslation = {
     'enter your username': 'enter your username',
     'username': 'username',
     'connect': 'connect',
+    'chat': 'chat',
+    'message': 'message',
+    'send': 'send'
 };

@@ -6,16 +6,23 @@ import { Button } from '@nextui-org/react';
 import { useTranslation } from '../../hooks/useTranslation';
 import { useTheme } from '../../hooks/useTheme';
 
-export const ThemeSwitch: React.FC = () => {
+interface IThemeSwitch {
+    className?: string 
+}
+
+export const ThemeSwitch: React.FC<IThemeSwitch> = ({
+    className
+}) => {
     const { t } = useTranslation();
 
     const { theme, switchTheme } = useTheme();
 
     return (
         <Button
+            className={className}
             color={'gradient'}
             bordered
-            onClick={switchTheme}
+            onPress={switchTheme}
         >
             {t('Theme')}: {t(`Theme__${theme}`)}
         </Button>

@@ -1,6 +1,7 @@
 
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import { useEffect } from 'react';
 import { useTranslation } from '../hooks/useTranslation';
 
 import { HomeScreen } from '../screens/home/home.screen';

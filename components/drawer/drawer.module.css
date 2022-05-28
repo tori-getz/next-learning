@@ -1,0 +1,13 @@
+
+.drawer {
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.dark {
+    background-color: #161616;
+}

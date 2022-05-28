@@ -1,9 +1,9 @@
 
+import 'react-modern-drawer/dist/index.css';
+
 import React from "react";
 
 import type { AppProps } from "next/app";
-
-import { withHydrate } from 'effector-next';
 
 import { ThemeProvider } from 'next-themes';
 import { NextUIProvider } from '@nextui-org/react';
@@ -35,6 +35,4 @@ const App: React.FC<AppProps> = ({
     )
 }
 
-const enhance = withHydrate();
-
-export default enhance(App);
+export default App;

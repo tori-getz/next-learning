@@ -1,15 +1,11 @@
 
 import Document, { DocumentContext, DocumentInitialProps, Head, Html, Main, NextScript } from "next/document";
 
-import { withFork } from 'effector-next';
-
 import { CssBaseline } from '@nextui-org/react';
 
 class AppDocument extends Document {
     public static async getInitialProps(ctx: DocumentContext): Promise<DocumentInitialProps> {
         const initialProps: DocumentInitialProps = await Document.getInitialProps(ctx);
-
-        console.log(ctx);
 
         return {
             ...initialProps,
@@ -32,6 +28,4 @@ class AppDocument extends Document {
     }
 }
 
-const enhance = withFork({ debug: false })
-
-export default enhance(AppDocument);
+export default AppDocument;

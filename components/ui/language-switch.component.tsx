@@ -5,7 +5,13 @@ import { useTranslation } from '../../hooks/useTranslation';
 
 import { Button } from '@nextui-org/react';
 
-export const LanguageSwitch: React.FC = () => {
+interface ILanguageSwitch {
+    className?: string
+}
+
+export const LanguageSwitch: React.FC<ILanguageSwitch> = ({
+    className
+}) => {
     const {
         language,
         t,
@@ -16,8 +22,9 @@ export const LanguageSwitch: React.FC = () => {
 
     return (
         <Button
+            className={className}
             color='gradient'
-            onClick={() => setLanguage(nextLanguage)}
+            onPress={() => setLanguage(nextLanguage)}
         >
             {t('Language')}: {language.toUpperCase()}
         </Button>
