@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"debug": "NODE_OPTIONS='--inspect' next dev",
+		"debug": "NODE_OPTIONS='--inspect' NODE_ENV='development' next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
@@ -12,7 +12,17 @@
 		"stylelint:fix": "./node_modules/.bin/stylelint \"**/*.css\" --fix"
 	},
 	"dependencies": {
+		"@nextui-org/react": "^1.0.0-beta.7",
+		"classnames": "^2.3.1",
+		"dotenv-load": "^2.0.1",
+		"effector": "^22.3.0",
+		"effector-next": "^1.3.2",
+		"effector-react": "^22.0.6",
 		"next": "12.1.6",
+		"next-compose-plugins": "^2.2.1",
+		"next-env": "^1.1.1",
+		"next-themes": "^0.2.0",
+		"random": "^3.0.6",
 		"react": "18.1.0",
 		"react-dom": "18.1.0"
 	},
